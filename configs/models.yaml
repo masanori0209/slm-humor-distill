@@ -1,0 +1,15 @@
+# モデル定義（MLX Community / Hugging Face）
+student:
+  name: "Qwen2.5-1.5B-Instruct"
+  mlx_repo: "mlx-community/Qwen2.5-1.5B-Instruct-4bit"
+
+teacher:
+  name: "Qwen2.5-14B-Instruct"
+  mlx_repo: "mlx-community/Qwen2.5-14B-Instruct-4bit"
+
+# TinySwallow 本家との対比用メモ
+reference:
+  name: "TinySwallow-1.5B"
+  teacher_was: "Qwen2.5-32B-Instruct"
+  method: "TAID (logit-level distillation)"
+  note: "本デモは合成データ蒸留（sequence-level）で再現する"

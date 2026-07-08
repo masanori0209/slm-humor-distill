@@ -1,0 +1,6 @@
+# Apple Silicon ネイティブ（MLX）。CUDA/PyTorch は不要。
+mlx==0.32.0
+mlx-lm==0.31.3
+# mlx-lm 0.31.3 は transformers 5.x と非互換のため 4 系に固定
+transformers<5
+huggingface_hub

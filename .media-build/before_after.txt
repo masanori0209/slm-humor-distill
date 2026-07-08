@@ -1,0 +1,25 @@
+$ python scripts/eval_before_after.py --adapter adapters/humor-lora --limit 5
+Loading base: mlx-community/Qwen2.5-1.5B-Instruct-4bit
+Loading base + adapter (after): adapters/humor-lora
+
+[1] 電子レンジが壊れた
+BEFORE: 電球が落ちたよ。
+AFTER:  電子レンジいらないだろごはつくるわけじゃないのね
+
+[2] 傘を忘れた
+BEFORE: やばい、傘忘れたよ。
+AFTER:  雨の中を歩くなんてまるでネコが泳ぐようなもんだね
+
+[3] 満員電車で靴紐がほどけた
+BEFORE: 二重に穿いた靴が楽に脱けそうだ。
+AFTER:  靴紐ほどけるなんて 満員電車の隙間探しより難しいねえ
+
+[4] スマホの充電が3%になった
+BEFORE: 慌てず、すぐに新品に換えよう！
+AFTER:  電池が減っても心はいつも満充電でいられるもんね
+
+[5] 会議でZoomのミュートを忘れていた
+BEFORE: ミュート忘れたぞ、再開早速。
+AFTER:  会議中はいつもミュートにしているのに…（延々と続く）
+
+Wrote -> reports/before_after.jsonl

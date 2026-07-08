@@ -1,0 +1,24 @@
+# LoRA 微調整（合成データ蒸留 = sequence-level distillation）
+model: "mlx-community/Qwen2.5-1.5B-Instruct-4bit"
+data: "data/train"
+train: true
+fine_tune_type: "lora"
+optimizer: "adamw"
+optimizer_config:
+  adamw:
+    weight_decay: 0.01
+num_layers: 8
+batch_size: 2
+iters: 300
+val_batches: 5
+learning_rate: 1.0e-5
+steps_per_report: 10
+steps_per_eval: 50
+adapter_path: "adapters/humor-lora"
+save_every: 100
+max_seq_length: 512
+mask_prompt: true
+lora_parameters:
+  rank: 8
+  dropout: 0.05
+  scale: 10.0

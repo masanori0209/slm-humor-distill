@@ -1,0 +1,17 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# 生成物・モデル・ログ（サイズが大きいので管理外）
+data/generated/
+data/train/
+models/
+adapters/
+fused_model/
+reports/
+*.gguf
+*.safetensors
+
+# macOS
+.DS_Store
