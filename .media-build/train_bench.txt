@@ -1,8 +1,4 @@
 $ mlx_lm.lora --config configs/lora.yaml
-Loading configuration file configs/lora.yaml
-Loading pretrained model
-Loading datasets
-Training
 Trainable parameters: 0.171% (2.638M/1543.714M)
 Starting training..., iters: 300
 
@@ -12,11 +8,9 @@ Iter 100: Train loss 1.892, Val loss 2.834
 Iter 150: Val loss 2.592  ← best
 Iter 200: Train loss 0.759, Val loss 2.970
 Iter 300: Train loss 0.475, Val loss 2.918
-Saved final weights to adapters/humor-lora/adapters.safetensors
 
-$ mlx_lm.generate --model fused_model/humor-1.5b-fused --max-tokens 60
-Generation: 60 tokens, 121.579 tokens-per-sec
-Peak memory: 0.987 GB
+$ mlx_lm.generate --model fused_model/humor-1.5b-fused
+Generation: 121.6 tokens-per-sec, Peak memory: 0.987 GB
 
-$ llama-cli -m ...Q4_K_M.gguf -ngl 0 -n 50
-[ Prompt: 115.6 t/s | Generation: 64.1 t/s ]
+$ llama-cli -m Qwen2.5-1.5B-Instruct-Q4_K_M.gguf -ngl 0
+Generation: 64.1 t/s（GPU オフロードなし）

@@ -1,6 +1,4 @@
 $ python scripts/eval_before_after.py --adapter adapters/humor-lora --limit 5
-Loading base: mlx-community/Qwen2.5-1.5B-Instruct-4bit
-Loading base + adapter (after): adapters/humor-lora
 
 [1] 電子レンジが壊れた
 BEFORE: 電球が落ちたよ。
@@ -21,5 +19,3 @@ AFTER:  電池が減っても心はいつも満充電でいられるもんね
 [5] 会議でZoomのミュートを忘れていた
 BEFORE: ミュート忘れたぞ、再開早速。
 AFTER:  会議中はいつもミュートにしているのに…（延々と続く）
-
-Wrote -> reports/before_after.jsonl
